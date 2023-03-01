@@ -48,7 +48,7 @@ public class Minesweeper {
         for (int j = 1; j < n + 1; j++) {
             for (int i = 1; i < m + 1; i++) {
                 int counter = 0;
-                // use 7 as a placeholder for mines to replace with a *
+                // use 17 as a placeholder for mines to replace with a *
                 if (paddedArray[i][j]) {
                     countArray[i - 1][j - 1] = 17;
                 }
