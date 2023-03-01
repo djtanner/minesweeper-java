@@ -11,9 +11,11 @@ public class Minesweeper {
         // Randomly select k spots in array and switch to true;
         int setMines = 0;
 
-        while (setMines < k) {
-            if (mineArray[(int) (Math.random() * m)][(int) (Math.random() * n)] == false) {
-                mineArray[(int) (Math.random() * m)][(int) (Math.random() * n)] = true;
+        while (setMines != k) {
+            int i = (int) (Math.random() * m);
+            int j = (int) (Math.random() * n);
+            if (!mineArray[i][j]) {
+                mineArray[i][j] = true;
                 setMines++;
             }
         }
